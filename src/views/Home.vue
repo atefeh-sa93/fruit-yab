@@ -1,10 +1,10 @@
 <template>
-  <v-container>
+  <div>
     <banner-info />
     <about-us />
     <opportunities />
     <people />
-  </v-container>
+  </div>
 </template>
 
 <script>

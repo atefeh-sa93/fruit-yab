@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="title">
+  <v-container>
+    <div class="opportunity-title">
       <h3>Creating opportunities for everyone</h3>
       <p>
         We are the first platform enabling increased benefits for farmers,
@@ -9,20 +9,12 @@
     </div>
     <div class="list">
       <v-container>
-        <v-row>
+        <v-row class="mb-5">
           <v-col md="4">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-              <template slot="progress">
-                <v-progress-linear
-                  color="deep-purple"
-                  height="10"
-                  indeterminate
-                ></v-progress-linear>
-              </template>
-
+            <v-card :loading="loading" class="opportunity-card" max-width="350">
               <v-img
                 height="350"
-                :src="require('@/assets/images/farmers.jpeg')"
+                :src="require('@/assets/images/farmer.png')"
               ></v-img>
 
               <v-card-title>
@@ -40,18 +32,10 @@
             </v-card>
           </v-col>
           <v-col md="4">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-              <template slot="progress">
-                <v-progress-linear
-                  color="deep-purple"
-                  height="10"
-                  indeterminate
-                ></v-progress-linear>
-              </template>
-
+            <v-card :loading="loading" class="opportunity-card" max-width="350">
               <v-img
                 height="350"
-                :src="require('@/assets/images/retailers.png')"
+                :src="require('@/assets/images/market.png')"
               ></v-img>
 
               <v-card-title>
@@ -69,18 +53,10 @@
             </v-card>
           </v-col>
           <v-col md="4">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-              <template slot="progress">
-                <v-progress-linear
-                  color="deep-purple"
-                  height="10"
-                  indeterminate
-                ></v-progress-linear>
-              </template>
-
+            <v-card :loading="loading" class="opportunity-card" max-width="350">
               <v-img
                 height="350"
-                :src="require('@/assets/images/customers.jpg')"
+                :src="require('@/assets/images/youth.png')"
               ></v-img>
 
               <v-card-title>
@@ -100,7 +76,7 @@
         </v-row>
       </v-container>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -121,3 +97,36 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.opportunity-title {
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+}
+.opportunity-title h3 {
+  margin: 30px 0 30px 0;
+  padding: 0;
+  font-size: 36px;
+  text-align: center;
+}
+.opportunity-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 32px;
+  color: #324148;
+  text-align: center;
+}
+.opportunity-card {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 1px 13px 20px #e4e5e6;
+  border-radius: 5px;
+  padding: 30px;
+  transition: all ease 0.5s;
+}
+.opportunity-card:hover {
+  background: #66bb6a;
+  box-shadow: 0px 26px 26px rgb(118 196 125 / 31%);
+}
+</style>
