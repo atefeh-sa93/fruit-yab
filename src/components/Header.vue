@@ -10,7 +10,7 @@
       <v-toolbar-items>
         <v-btn text> Home </v-btn>
 
-        <v-btn text> About Us </v-btn>
+        <v-btn text href="#aboutUs"> About Us </v-btn>
 
         <v-btn text> Buy/Sell </v-btn>
       </v-toolbar-items>

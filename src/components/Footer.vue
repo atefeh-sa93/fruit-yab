@@ -25,9 +25,9 @@
               <v-col cols="12" md="6">
                 <div class="footer-socials">
                   <h6>Connect with us</h6>
-                  <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+                  <v-btn v-for="item in socials" :key="item.icon" :href="item.href" class="mx-4" icon>
                     <v-icon size="24px" class="socials">
-                      {{ icon }}
+                      {{ item.icon }}
                     </v-icon>
                   </v-btn>
                 </div>
@@ -50,7 +50,21 @@
 export default {
   name: "Footer",
   data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+    socials: [
+      {
+        icon: "mdi-twitter",
+        href:"https://twitter.com/fruityab"
+      },
+      {
+        icon: "mdi-linkedin",
+        href:"https://www.linkedin.com/in/fruityab-company-18b55022a/"
+      },
+      {
+        icon: "mdi-instagram",
+        href: "https://www.instagram.com/fruityab/"
+      }
+
+    ],
   }),
 };
 </script>
