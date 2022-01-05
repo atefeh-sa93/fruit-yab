@@ -6,11 +6,9 @@
           <div class="about-context">
             <h3>About Us</h3>
             <p>
-              Ninjacart is India's largest Fresh Produce Supply Chain Company.
-              We are pioneers in solving one of the toughest supply chain
-              problems of the world by leveraging innovative technology. We
-              source fresh produce from farmers and deliver them to businesses
-              within 12 hours.
+              Fruityab is driven by state of the art technology to minimize not
+              only the harvests waste but also the delivery time plus maximize
+              the quality and users satisfaction
             </p>
             <v-btn color="#66BB6A" elevation="2" large class="white--text"
               >Know more</v-btn
@@ -42,11 +40,11 @@ export default {
 .bg-color {
   width: 100%;
   margin: 70px 0 0 0;
-  background: #F5F5F5;
+  background: #D8E1E6;
 }
 .about-context {
   position: relative;
-  padding: 70px 0 0 50px;
+  padding: 70px 0 0;
 }
 .about-context h3 {
   margin: 0 0 20px 0;
@@ -86,23 +84,26 @@ div {
   }
   25% {
     border-radius: 50% 0 0 0;
-    background: darksalmon;
+    background: rgb(207, 207, 204);
     transform: rotate(135deg);
   }
   50% {
     border-radius: 50% 50% 0 0;
-    background: indianred;
+    background: rgb(143, 123, 122);
     transform: rotate(180deg);
   }
   75% {
     border-radius: 50% 50% 50% 0;
-    background: lightcoral;
+    background: rgb(209, 27, 14);
     transform: rotate(315deg);
   }
   100% {
     border-radius: 50%;
-    background: darksalmon;
+    background: rgb(36, 126, 51);
     transform: rotate(404deg);
   }
+}
+.list-view{
+  margin: 70px 0 70px 0;
 }
 </style>
