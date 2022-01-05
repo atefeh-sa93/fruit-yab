@@ -1,7 +1,9 @@
 <template>
   <v-container>
-    <v-toolbar flat color="#FFFADD">
-      <v-toolbar-title>FruitYab</v-toolbar-title>
+    <v-toolbar flat color="#D6DFE4">
+      <v-toolbar-title>
+        <img :src="require('@/assets/images/fruityab.png')" class="responsive-img" />
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -21,3 +23,10 @@ export default {
   name: "Header",
 };
 </script>
+<style scoped>
+.responsive-img{
+  width:90px !important;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+</style>

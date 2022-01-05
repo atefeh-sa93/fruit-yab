@@ -18,15 +18,14 @@
               ></v-img>
 
               <v-card-title>
-                <h6>Benefits for farmers</h6>
+                <h6 class="title">Benefits for Farmers:</h6>
               </v-card-title>
 
               <v-card-text>
-                <ul>
-                  <li>Competitive pricing</li>
-                  <li>20% more revenue</li>
-                  <li>Competitive pricing</li>
-                  <li>20% more revenue</li>
+                <ul class="bullet-point">
+                  <li>Up to 20% more revenue</li>
+                  <li>Payment in a month</li>
+                  <li>Transparent process</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -39,15 +38,16 @@
               ></v-img>
 
               <v-card-title>
-                <h6>Convenience for retailers</h6>
+                <h6 class="title">Convenience for Retailers:</h6>
               </v-card-title>
 
               <v-card-text>
-                <ul>
-                  <li>Competitive pricing</li>
-                  <li>20% more revenue</li>
-                  <li>Competitive pricing</li>
-                  <li>20% more revenue</li>
+                <ul class="bullet-point">
+                  <li>Lower pricing</li>
+                  <li>High-quality products</li>
+                  <li>
+                    The flexible and convenient timetable of buy
+                  </li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -60,15 +60,15 @@
               ></v-img>
 
               <v-card-title>
-                <h6>Savings for consumers</h6>
+                <h6 class="title">Savings for Consumers:</h6>
               </v-card-title>
 
               <v-card-text>
-                <ul>
-                  <li>Competitive pricing</li>
-                  <li>Hygienically handled produce</li>
-                  <li>Competitive pricing</li>
-                  <li>Hygienically handled produce</li>
+                <ul class="bullet-point">
+                  <li>Good hygiene</li>
+                  <li>Better quality</li>
+                  <li>Less price</li>
+                  <li>More consume</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -119,6 +119,7 @@ export default {
 }
 .opportunity-card {
   width: 100%;
+  height: 100%;
   background: #ffffff;
   box-shadow: 1px 13px 20px #e4e5e6;
   border-radius: 5px;
@@ -128,5 +129,41 @@ export default {
 .opportunity-card:hover {
   background: #66bb6a;
   box-shadow: 0px 26px 26px rgb(118 196 125 / 31%);
+}
+.title{
+  text-align: center;
+  font-size: 26px;
+}
+.bullet-point {
+  overflow: hidden;
+}
+.bullet-point > li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 2em;
+  margin: 0 0 0.5em 10px;
+  transition: 0.12s;
+}
+.bullet-point > li::before {
+  position: absolute;
+  content: "\2022";
+  font-family: Arial;
+  color: #fff;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0.5;
+  line-height: 0.75;
+  transition: 0.5s;
+}
+.bullet-point > li:hover {
+  color: #fff;
+}
+.bullet-point > li:hover::before {
+  transform: scale(2);
+  opacity: 1;
+  text-shadow: 0 0 4px;
+  transition: 0.1s;
 }
 </style>

@@ -11,42 +11,42 @@
       </v-row>
       <v-row class="mb-15">
         <v-col md="4">
-          <v-card :loading="loading" class="people-info" max-width="400">
+          <v-card :loading="loading" class="people-info" max-width="350">
             <v-img
-              :src="require('@/assets/images/people1.jpg')"
-              width="250"
+              :src="require('@/assets/images/people1.jpeg')"
+              height="350"
               class="mx-auto rounded-circle"
             ></v-img>
 
             <h6>Alireza Atashi</h6>
 
-            <p>MBA</p>
+            <p>CEO</p>
           </v-card>
         </v-col>
         <v-col md="4">
-          <v-card :loading="loading" class="people-info" max-width="400">
+          <v-card :loading="loading" class="people-info" max-width="350">
             <v-img
-              :src="require('@/assets/images/people1.jpg')"
-              width="250"
+              :src="require('@/assets/images/people3.jpeg')"
+              height="350"
               class="mx-auto rounded-circle"
             ></v-img>
 
-            <h6>Alireza Atashi</h6>
+            <h6>Sara Ramezani</h6>
 
-            <p>MBA</p>
+            <p>Marketing Manager</p>
           </v-card>
         </v-col>
         <v-col md="4">
-          <v-card :loading="loading" class="people-info" max-width="400">
+          <v-card :loading="loading" class="people-info" max-width="350">
             <v-img
-              :src="require('@/assets/images/people1.jpg')"
-              width="250"
+              :src="require('@/assets/images/people2.jpeg')"
+              height="350"
               class="mx-auto rounded-circle"
             ></v-img>
 
-            <h6>Alireza Atashi</h6>
+            <h6>Ali Akrami</h6>
 
-            <p>MBA</p>
+            <p>Finance Manager</p>
           </v-card>
         </v-col>
       </v-row>
@@ -100,6 +100,7 @@
   background: #66bb6a;
   background-size: cover;
   box-shadow: 44px 44px 62px rgb(118 196 125 / 26%);
+  color:#fff;
 }
 .people-info h6 {
   text-align: center;

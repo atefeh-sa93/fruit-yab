@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app flat color="#FFFADD">
+    <v-app-bar app flat color="#D6DFE4" height="100">
       <Header />
     </v-app-bar>
 
@@ -27,5 +27,8 @@ export default {
 <style scoped>
 .nav-info {
   display: block;
+}
+.v-main{
+  padding:170px 0px 170px !important;
 }
 </style>
