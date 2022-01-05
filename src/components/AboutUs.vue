@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-color">
+  <div class="bg-color" id="aboutUs">
     <v-container>
       <v-row class="mt-15">
         <v-col cols="12" md="6">
