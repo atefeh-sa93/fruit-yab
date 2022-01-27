@@ -14,17 +14,17 @@
             <v-row>
               <v-col cols="12" md="6">
                 <div class="company-list">
-                  <h6>FruitYab</h6>
+                  <h6>{{$t('brand')}}</h6>
                   <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Buy/Sell</li>
+                    <li>{{$t('home')}}</li>
+                    <li>{{$t('aboutUs')}}</li>
+                    <li>{{$t('buySell')}}</li>
                   </ul>
                 </div>
               </v-col>
               <v-col cols="12" md="6">
                 <div class="footer-socials">
-                  <h6>Connect with us</h6>
+                  <h6>{{$t('inTouch')}}</h6>
                   <v-btn v-for="item in socials" :key="item.icon" :href="item.href" class="mx-4" icon>
                     <v-icon size="24px" class="socials">
                       {{ item.icon }}
@@ -39,7 +39,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="py-2 black--text text-center">
-          © {{ new Date().getFullYear() }} — <strong>FruitYab</strong>
+          © {{ new Date().getFullYear() }} — <strong>{{$t('brand')}}</strong>
         </v-card-text>
       </v-card>
     </v-footer>

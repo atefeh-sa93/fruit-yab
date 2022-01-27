@@ -4,14 +4,14 @@
       <v-row>
         <v-col>
           <div class="people-title">
-            <h3>Meet our teams</h3>
-            <p>The people who drive the core functions of FruitYab.</p>
+            <h3>{{$t('meetTeams')}}</h3>
+            <p>{{$t('meetTeamsContent')}}</p>
           </div>
         </v-col>
       </v-row>
       <v-row class="mb-15">
         <v-col md="4">
-          <v-card :loading="loading" class="people-info" max-width="350">
+          <v-card  class="people-info" max-width="350">
             <v-img
               :src="require('@/assets/images/people1.jpeg')"
               height="350"
@@ -24,7 +24,7 @@
           </v-card>
         </v-col>
         <v-col md="4">
-          <v-card :loading="loading" class="people-info" max-width="350">
+          <v-card class="people-info" max-width="350">
             <v-img
               :src="require('@/assets/images/people3.jpeg')"
               height="350"
@@ -37,7 +37,7 @@
           </v-card>
         </v-col>
         <v-col md="4">
-          <v-card :loading="loading" class="people-info" max-width="350">
+          <v-card class="people-info" max-width="350">
             <v-img
               :src="require('@/assets/images/people2.jpeg')"
               height="350"

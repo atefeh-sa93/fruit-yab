@@ -1,10 +1,9 @@
 <template>
   <v-container>
     <div class="opportunity-title">
-      <h3>Creating opportunities for everyone</h3>
+      <h3>{{$t('createOpportunities')}}</h3>
       <p>
-        We are the first platform enabling increased benefits for farmers,
-        retailers, and consumers.
+        {{$t('opportunitiesContent')}}
       </p>
     </div>
     <div class="list">
@@ -18,14 +17,14 @@
               ></v-img>
 
               <v-card-title>
-                <h6 class="title">Benefits for Farmers:</h6>
+                <h6 class="title">{{$t('farmers')}}</h6>
               </v-card-title>
 
               <v-card-text>
                 <ul class="bullet-point">
-                  <li>Up to 20% more revenue</li>
-                  <li>Payment in a month</li>
-                  <li>Transparent process</li>
+                  <li>{{$t('farmersBullet1')}}</li>
+                  <li>{{$t('farmersBullet2')}}</li>
+                  <li>{{$t('farmersBullet3')}}</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -38,15 +37,15 @@
               ></v-img>
 
               <v-card-title>
-                <h6 class="title">Convenience for Retailers:</h6>
+                <h6 class="title">{{$t('retailers')}}</h6>
               </v-card-title>
 
               <v-card-text>
                 <ul class="bullet-point">
-                  <li>Lower pricing</li>
-                  <li>High-quality products</li>
+                  <li>{{$t('retailersBullet1')}}</li>
+                  <li>{{$t('retailersBullet2')}}</li>
                   <li>
-                    The flexible and convenient timetable of buy
+                    {{$t('retailersBullet3')}}
                   </li>
                 </ul>
               </v-card-text>
@@ -60,15 +59,15 @@
               ></v-img>
 
               <v-card-title>
-                <h6 class="title">Savings for Consumers:</h6>
+                <h6 class="title">{{$t('consumers')}}</h6>
               </v-card-title>
 
               <v-card-text>
                 <ul class="bullet-point">
-                  <li>Good hygiene</li>
-                  <li>Better quality</li>
-                  <li>Less price</li>
-                  <li>More consume</li>
+                  <li>{{$t('consumersBullet1')}}</li>
+                  <li>{{$t('consumersBullet2')}}</li>
+                  <li>{{$t('consumersBullet3')}}</li>
+                  <li>{{$t('consumersBullet4')}}</li>
                 </ul>
               </v-card-text>
             </v-card>
@@ -81,7 +80,7 @@
 
 <script>
 export default {
-  name: "Oppurtunities",
+  name: "Opportunities",
 
   data: () => ({
     loading: false,

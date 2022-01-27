@@ -4,14 +4,13 @@
       <v-row class="mt-15">
         <v-col cols="12" md="6">
           <h3 class="banner-text">
-            <span>The Supply Chain Of Harvests</span>
+            <span>{{$t('supplyChain')}}</span>
           </h3>
           <h6 class="banner-content">
-            Lean and flexible logistics and smart matching between farmers and
-            businesses
+            {{$t('bannerContent')}}
           </h6>
           <v-btn color="#66BB6A" elevation="2" large class="white--text"
-            >Learn More</v-btn
+            >{{$t('learnMore')}}</v-btn
           >
         </v-col>
         <v-col cols="12" md="6">
