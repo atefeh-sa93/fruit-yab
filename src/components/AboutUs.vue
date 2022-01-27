@@ -4,14 +4,12 @@
       <v-row class="mt-15">
         <v-col cols="12" md="6">
           <div class="about-context">
-            <h3>About Us</h3>
+            <h3>{{$t('aboutUs')}}</h3>
             <p>
-              Fruityab is driven by state of the art technology to minimize not
-              only the harvests waste but also the delivery time plus maximize
-              the quality and users satisfaction
+              {{$t('aboutUsContent')}}
             </p>
             <v-btn color="#66BB6A" elevation="2" large class="white--text"
-              >Know more</v-btn
+              >{{$t('learnMore')}}</v-btn
             >
           </div>
         </v-col>
